@@ -15,41 +15,41 @@ const HeroSection = () => {
         }}
       />
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="animate-float">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <div className="animate-fade-in">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
             Găzduire Web Site <br />
             <span className="gradient-text">Performantă</span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
             Găzduire web site performantă pentru site-uri mici, medii și mari, cu suport tehnic 24/7
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+          <Button variant="hero" size="lg" className="text-lg px-10 py-4">
             <Zap className="mr-2" />
             Începe Acum
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+          <Button variant="elegant" size="lg" className="text-lg px-10 py-4">
             Afla Mai Mult
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-white/80 animate-pulse-slow">
-            <Server className="w-12 h-12 mx-auto mb-4 text-accent" />
-            <h3 className="text-lg font-semibold mb-2">Servere Performante</h3>
-            <p>Tehnologie SSD și NVMe pentru viteze maxime</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="text-white/70 p-6 rounded-xl bg-white/5 backdrop-blur-sm">
+            <Server className="w-10 h-10 mx-auto mb-4 text-white" />
+            <h3 className="text-lg font-semibold mb-3 text-white">Servere Performante</h3>
+            <p className="leading-relaxed">Tehnologie SSD și NVMe pentru viteze maxime</p>
           </div>
-          <div className="text-white/80 animate-pulse-slow" style={{ animationDelay: '1s' }}>
-            <Shield className="w-12 h-12 mx-auto mb-4 text-accent" />
-            <h3 className="text-lg font-semibold mb-2">Securitate Maximă</h3>
-            <p>Protecție DDoS și certificat SSL inclus</p>
+          <div className="text-white/70 p-6 rounded-xl bg-white/5 backdrop-blur-sm">
+            <Shield className="w-10 h-10 mx-auto mb-4 text-white" />
+            <h3 className="text-lg font-semibold mb-3 text-white">Securitate Maximă</h3>
+            <p className="leading-relaxed">Protecție DDoS și certificat SSL inclus</p>
           </div>
-          <div className="text-white/80 animate-pulse-slow" style={{ animationDelay: '2s' }}>
-            <Zap className="w-12 h-12 mx-auto mb-4 text-accent" />
-            <h3 className="text-lg font-semibold mb-2">Suport 24/7</h3>
-            <p>Echipă tehnică disponibilă non-stop</p>
+          <div className="text-white/70 p-6 rounded-xl bg-white/5 backdrop-blur-sm">
+            <Zap className="w-10 h-10 mx-auto mb-4 text-white" />
+            <h3 className="text-lg font-semibold mb-3 text-white">Suport 24/7</h3>
+            <p className="leading-relaxed">Echipă tehnică disponibilă non-stop</p>
           </div>
         </div>
 

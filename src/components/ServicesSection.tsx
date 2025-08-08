@@ -19,9 +19,7 @@ const ServicesSection = () => {
         "cPanel inclus",
         "Backup automat zilnic"
       ],
-      price: "De la 15 RON/lună",
-      image: sharedImage,
-      popular: false
+      image: sharedImage
     },
     {
       icon: Server,
@@ -35,7 +33,6 @@ const ServicesSection = () => {
         "SSD NVMe rapid",
         "Monitorizare 24/7"
       ],
-      price: "De la 99 RON/lună",
       image: vpsImage,
       popular: true
     },
@@ -51,69 +48,66 @@ const ServicesSection = () => {
         "Suport prioritar",
         "Management inclus"
       ],
-      price: "De la 299 RON/lună",
-      image: dedicatedImage,
-      popular: false
+      image: dedicatedImage
     }
   ];
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">
             Servicii de Găzduire Web Site
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Alegem soluția perfectă pentru nevoile tale, de la site-uri simple la aplicații complexe
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <Card 
               key={index} 
-              className={`card-gradient relative overflow-hidden h-full ${
-                service.popular ? 'ring-2 ring-primary glow-effect' : ''
+              className={`card-gradient relative overflow-hidden h-full hover:scale-[1.02] transition-all duration-300 ${
+                service.popular ? 'ring-2 ring-primary/30' : ''
               }`}
             >
               {service.popular && (
-                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                <div className="absolute top-6 right-6 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
                   Populară
                 </div>
               )}
               
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
+              <div className="relative h-52 overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <service.icon className="absolute bottom-4 right-4 w-8 h-8 text-white" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <service.icon className="absolute bottom-6 right-6 w-8 h-8 text-white drop-shadow-lg" />
               </div>
 
-              <CardHeader>
-                <CardTitle className="text-2xl">{service.title}</CardTitle>
+              <CardHeader className="pb-4">
+                <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>
                 <CardDescription className="text-lg">{service.subtitle}</CardDescription>
               </CardHeader>
 
-              <CardContent className="flex-1 flex flex-col">
-                <p className="text-muted-foreground mb-6">{service.description}</p>
+              <CardContent className="flex-1 flex flex-col pt-0">
+                <p className="text-muted-foreground mb-8 leading-relaxed">{service.description}</p>
                 
-                <ul className="space-y-3 mb-8 flex-1">
+                <ul className="space-y-4 mb-8 flex-1">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <Check className="w-5 h-5 text-secondary mr-3 flex-shrink-0" />
-                      <span>{feature}</span>
+                      <Check className="w-5 h-5 text-primary mr-4 flex-shrink-0" />
+                      <span className="leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                <div className="mt-auto">
-                  <div className="text-3xl font-bold text-primary mb-4">{service.price}</div>
+                <div className="mt-auto pt-4">
                   <Button 
-                    variant={service.popular ? "gradient" : "default"} 
+                    variant={service.popular ? "hero" : "cta"} 
                     className="w-full"
                     size="lg"
                   >
