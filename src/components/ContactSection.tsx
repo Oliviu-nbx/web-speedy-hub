@@ -25,23 +25,26 @@ const ContactSection = () => {
                 <div className="flex items-center justify-center">
                   <Phone className="w-8 h-8 mr-4 text-accent" />
                   <div className="text-center">
-                    <p className="text-2xl font-bold">0264 33 44 55</p>
-                    <p className="text-white/80">Suntem disponibili prin telefon</p>
+                    <p className="text-2xl font-bold">+40 264 33 44 55</p>
+                    <p className="text-white/80">Suport tehnic: 09:00–18:00 (L–V)</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-center">
                   <Mail className="w-8 h-8 mr-4 text-accent" />
                   <div className="text-center">
-                    <p className="font-bold">sau prin email</p>
+                    <a href="mailto:office@namebox.ro" className="font-bold underline hover:opacity-90">office@namebox.ro</a>
+                    <p className="text-white/80">Răspuns rapid</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-8">
-                <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-                  <Phone className="mr-2" />
-                  Sună acum
+                <Button asChild variant="hero" size="lg" className="text-lg px-8 py-4">
+                  <a href="tel:+40264334455" aria-label="Sună Namebox acum">
+                    <Phone className="mr-2" />
+                    Sună acum
+                  </a>
                 </Button>
               </div>
             </CardContent>

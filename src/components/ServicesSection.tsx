@@ -9,18 +9,21 @@ const ServicesSection = () => {
     icon: Users,
     title: "Găzduire Shared",
     description: "Ideal pentru site-uri mici și medii. Performanță excelentă și costuri reduse pentru găzduirea website-urilor tale.",
-    image: sharedImage
+    image: sharedImage,
+    link: "https://www.namebox.ro/#alege-pachet"
   }, {
     icon: Server,
     title: "Găzduire VPS",
     description: "Pentru site-uri mai complexe. Performanță îmbunătățită și control complet asupra găzduirii VPS.",
     image: vpsImage,
-    popular: true
+    popular: true,
+    link: "https://www.namebox.ro/servere-vps/"
   }, {
     icon: Crown,
     title: "Găzduire Dedicată",
     description: "Pentru site-uri cu trafic mare. Resurse dedicate și maximă performanță pentru găzduire servere dedicate.",
-    image: dedicatedImage
+    image: dedicatedImage,
+    link: "https://www.namebox.ro/servere-kvm/"
   }];
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -44,8 +47,8 @@ const ServicesSection = () => {
               </CardHeader>
 
               <CardContent className="pt-0">
-                <Button variant="hero" className="w-full" size="lg">
-                  Vezi Detalii
+                <Button asChild variant="hero" className="w-full" size="lg">
+                  <a href={service.link} target="_blank" rel="noopener noreferrer" aria-label={`Detalii ${service.title}`}>Vezi Detalii</a>
                 </Button>
               </CardContent>
             </Card>)}

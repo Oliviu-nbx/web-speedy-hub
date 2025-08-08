@@ -20,11 +20,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicii</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-accent transition-colors">Găzduire Shared</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Găzduire VPS</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Găzduire Dedicată</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Domenii Web</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Certificat SSL</a></li>
+              <li><a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Găzduire Shared</a></li>
+              <li><a href="https://www.namebox.ro/servere-vps/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Găzduire VPS</a></li>
+              <li><a href="https://www.namebox.ro/servere-kvm/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Găzduire Dedicată</a></li>
+              <li><a href="https://www.namebox.ro/inregistrare-domenii/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Domenii Web</a></li>
+              <li><a href="https://www.namebox.ro/certificate-ssl/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Certificat SSL</a></li>
             </ul>
           </div>
 
@@ -32,11 +32,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Suport</h3>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#" className="hover:text-accent transition-colors">Documentație</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Tutoriale</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Status Servere</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
+              <li><a href="https://www.namebox.ro/documentatie/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Documentație</a></li>
+              <li><a href="https://www.namebox.ro/blog/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Tutoriale</a></li>
+              <li><a href="https://www.namebox.ro/documentatie/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">FAQ</a></li>
+              <li><a href="https://my.namebox.ro/serverstatus.php" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Status Servere</a></li>
+              <li><a href="https://my.namebox.ro/submitticket.php" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -46,15 +46,15 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-accent flex-shrink-0" />
-                <span>0264 33 44 55</span>
+                <span>+40 264 33 44 55</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-accent flex-shrink-0" />
-                <span>info@hosting.ro</span>
+                <a href="mailto:office@namebox.ro" className="hover:text-accent transition-colors">office@namebox.ro</a>
               </div>
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-accent flex-shrink-0 mt-1" />
-                <span>Cluj-Napoca, România</span>
+                <span>Strada Heltai Gáspár 17, Cluj-Napoca</span>
               </div>
             </div>
           </div>

@@ -22,9 +22,11 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-          <Button variant="hero" size="lg" className="text-lg px-10 py-4">
-            <Zap className="mr-2" />
-            Vezi Servicii
+          <Button asChild variant="hero" size="lg" className="text-lg px-10 py-4">
+            <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Vezi serviciile Namebox">
+              <Zap className="mr-2" />
+              Vezi Servicii
+            </a>
           </Button>
         </div>
 

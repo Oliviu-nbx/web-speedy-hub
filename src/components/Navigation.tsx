@@ -35,8 +35,8 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <Button variant="hero" size="sm">
-              Începe Acum
+            <Button asChild variant="hero" size="sm">
+              <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
             </Button>
           </div>
 
@@ -54,8 +54,8 @@ const Navigation = () => {
               {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-white/90 hover:text-white transition-colors duration-200 font-medium py-2" onClick={() => setIsMenuOpen(false)}>
                   {item.label}
                 </a>)}
-              <Button variant="hero" size="sm" className="mt-4 self-start">
-                Începe Acum
+              <Button asChild variant="hero" size="sm" className="mt-4 self-start">
+                <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
               </Button>
             </div>
           </div>}
