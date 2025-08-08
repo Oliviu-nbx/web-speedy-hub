@@ -17,19 +17,19 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Subtle tech colors */
-    --primary: 210 70% 35%;
+    /* Namebox-inspired brand colors */
+    --primary: 223 82% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 70% 45%;
+    --primary-glow: 223 82% 62%;
 
     /* Clean secondary colors */
-    --secondary: 210 20% 95%;
-    --secondary-foreground: 210 70% 25%;
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 222.2 84% 20%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 70% 40%;
+    --accent: 223 82% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -37,11 +37,11 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 70% 35%;
+    --ring: 223 82% 55%;
 
-    /* Subtle gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220, 65%, 24%), hsl(220, 65%, 32%));
-    --gradient-hero: linear-gradient(135deg, hsl(220, 65%, 16%) 0%, hsl(220, 65%, 26%) 100%);
+    /* Light, friendly gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(223, 82%, 55%), hsl(223, 82%, 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(213, 100%, 97%) 0%, hsl(213, 100%, 92%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(210, 20%, 98%) 100%);
 
     /* Elegant shadows */
@@ -81,9 +81,9 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 70% 45%;
+    --primary: 223 82% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 210 70% 50%;
+    --primary-glow: 223 82% 66%;
 
     --secondary: 210 20% 15%;
     --secondary-foreground: 210 40% 98%;
@@ -91,7 +91,7 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 70% 50%;
+    --accent: 223 82% 62%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -99,10 +99,10 @@ All colors MUST be HSL.
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 210 70% 45%;
+    --ring: 223 82% 60%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220, 65%, 30%), hsl(220, 65%, 36%));
+    --gradient-primary: linear-gradient(135deg, hsl(223, 82%, 52%), hsl(223, 82%, 60%));
     --gradient-hero: linear-gradient(135deg, hsl(220, 65%, 14%) 0%, hsl(220, 65%, 22%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(222.2, 84%, 4.9%) 0%, hsl(217.2, 32.6%, 17.5%) 100%);
 

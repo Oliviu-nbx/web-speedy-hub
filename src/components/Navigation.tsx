@@ -17,18 +17,18 @@ const Navigation = () => {
     label: "Contact",
     href: "#contact"
   }];
-  return <nav className="fixed top-0 w-full bg-white/10 backdrop-blur-md border-b border-white/20 z-50">
+  return <nav className="fixed top-0 w-full bg-white border-b border-border z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Server className="w-8 h-8 text-accent" />
-            <span className="text-xl font-bold text-white font-display">Gazduire Web</span>
+            <Server className="w-8 h-8 text-primary" />
+            <span className="text-xl font-bold text-foreground font-display">Gazduire Web</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-white/90 hover:text-white transition-colors duration-200 font-medium">
+            {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium">
                 {item.label}
               </a>)}
           </div>
@@ -42,16 +42,16 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={toggleMenu} className="text-white hover:bg-white/10">
+            <Button variant="ghost" size="icon" onClick={toggleMenu} className="text-foreground hover:bg-muted">
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden py-4 border-t border-white/20">
+        {isMenuOpen && <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-white/90 hover:text-white transition-colors duration-200 font-medium py-2" onClick={() => setIsMenuOpen(false)}>
+              {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium py-2" onClick={() => setIsMenuOpen(false)}>
                   {item.label}
                 </a>)}
               <Button asChild variant="hero" size="sm" className="mt-4 self-start">
