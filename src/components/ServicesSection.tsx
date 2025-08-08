@@ -32,7 +32,7 @@ const ServicesSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
             Servicii de <span className="gradient-text">Găzduire Web Site</span>
           </h2>
         </div>

@@ -21,7 +21,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Server className="w-8 h-8 text-accent" />
-            <span className="text-xl font-bold text-white">WebHost Pro</span>
+            <span className="text-xl font-bold text-white font-display">WebHost Pro</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -30,7 +30,7 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white/90 hover:text-white transition-colors duration-200 font-medium"
+                className="story-link text-white/90 hover:text-white transition-colors duration-200 font-medium"
               >
                 {item.label}
               </a>
@@ -65,7 +65,7 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-white/90 hover:text-white transition-colors duration-200 font-medium py-2"
+                  className="story-link text-white/90 hover:text-white transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
