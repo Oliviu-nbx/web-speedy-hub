@@ -8,7 +8,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-            Suport în Alegerea Pachetului Ideal
+            Găzduire Web: Suport în Alegerea Pachetului
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Dacă nu ești sigur ce tip de găzduire ți se potrivește, echipa noastră este aici să te ajute! Contactează-ne pentru recomandări personalizate și sfaturi privind cel mai bun pachet pentru site-ul tău.

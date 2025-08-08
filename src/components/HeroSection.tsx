@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-display font-bold text-foreground mb-8 leading-tight">
-            Servicii de <span className="gradient-text">Găzduire Web</span>
+            <span className="gradient-text">Găzduire Web</span> — Servicii Profesionale
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">Găzduire web performantă pentru site-uri mici, medii și mari, cu suport tehnic 24/7</p>
         </div>
