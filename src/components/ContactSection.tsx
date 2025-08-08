@@ -8,10 +8,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Suport în Alegerea Pachetului Ideal
+            Alege Gazduire Web Perfectă
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Dacă nu ești sigur ce tip de găzduire ți se potrivește, echipa noastră este aici să te ajute!
+            Contactează specialiștii noștri în gazduire web pentru consultanță gratuită și recomandări personalizate de hosting
           </p>
         </div>
 
@@ -19,44 +19,44 @@ const ContactSection = () => {
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <CardHeader className="text-center">
               <Phone className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <CardTitle>Telefon</CardTitle>
+              <CardTitle>Consultanță Gazduire</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-2xl font-bold">0264 33 44 55</p>
-              <p className="text-white/80">Apelează acum</p>
+              <p className="text-white/80">Specialiști hosting</p>
             </CardContent>
           </Card>
 
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <CardHeader className="text-center">
               <Mail className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <CardTitle>Email</CardTitle>
+              <CardTitle>Email Gazduire Web</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="font-bold">info@hosting.ro</p>
-              <p className="text-white/80">Scrie-ne un mesaj</p>
+              <p className="font-bold">hosting@webhost.ro</p>
+              <p className="text-white/80">Info despre gazduire</p>
             </CardContent>
           </Card>
 
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <CardHeader className="text-center">
               <MessageCircle className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <CardTitle>Chat Live</CardTitle>
+              <CardTitle>Chat Hosting Live</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="font-bold">Chat Instant</p>
-              <p className="text-white/80">Răspuns imediat</p>
+              <p className="font-bold">Chat Gazduire Instant</p>
+              <p className="text-white/80">Support hosting rapid</p>
             </CardContent>
           </Card>
 
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <CardHeader className="text-center">
               <Clock className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <CardTitle>Disponibilitate</CardTitle>
+              <CardTitle>Support Hosting 24/7</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="font-bold">24/7</p>
-              <p className="text-white/80">Non-stop</p>
+              <p className="font-bold">24/7/365</p>
+              <p className="text-white/80">Gazduire web non-stop</p>
             </CardContent>
           </Card>
         </div>
@@ -64,20 +64,20 @@ const ContactSection = () => {
         <div className="text-center">
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 text-white max-w-4xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl">Contactează-ne pentru recomandări personalizate</CardTitle>
+              <CardTitle className="text-2xl">Consultanță Gratuită Gazduire Web</CardTitle>
               <CardDescription className="text-white/80 text-lg">
-                Echipa noastră de experți îți va recomanda cea mai bună soluție pentru proiectul tău
+                Specialiștii noștri în gazduire web îți vor recomanda soluția de hosting perfectă pentru proiectul tău
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="lg" className="text-lg px-8 py-4">
                   <Phone className="mr-2" />
-                  Sună Acum
+                  Consultanță Hosting
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary">
+                <Button variant="elegant" size="lg" className="text-lg px-8 py-4">
                   <Mail className="mr-2" />
-                  Trimite Email
+                  Email Gazduire Web
                 </Button>
               </div>
             </CardContent>

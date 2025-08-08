@@ -9,44 +9,44 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Users,
-      title: "Găzduire Shared",
-      subtitle: "Ideal pentru site-uri mici și medii",
-      description: "Performanță excelentă și costuri reduse pentru găzduirea website-urilor tale.",
+      title: "Gazduire Web Shared",
+      subtitle: "Hosting shared pentru site-uri mici și medii",
+      description: "Soluția perfectă de gazduire web pentru bloguri, site-uri de prezentare și magazine online mici. Hosting shared cu performanță garantată.",
       features: [
-        "Spațiu de stocare 10GB - 100GB",
-        "Trafic nelimitat",
-        "Certificat SSL gratuit",
-        "cPanel inclus",
-        "Backup automat zilnic"
+        "Gazduire web cu spațiu SSD 10GB-100GB",
+        "Trafic nelimitat pentru hosting",
+        "Certificat SSL gratuit inclus",
+        "Panou de control cPanel pentru gazduire",
+        "Backup zilnic automat pentru site"
       ],
       image: sharedImage
     },
     {
       icon: Server,
-      title: "Găzduire VPS",
-      subtitle: "Pentru site-uri mai complexe",
-      description: "Performanță îmbunătățită și control complet asupra găzduirii VPS.",
+      title: "Hosting VPS România",
+      subtitle: "Gazduire VPS pentru site-uri complexe",
+      description: "Gazduire web VPS cu resurse dedicate și control complet. Ideal pentru aplicații web și site-uri cu trafic mediu spre mare.",
       features: [
-        "Resurse garantate",
-        "Root access complet",
-        "Scalabilitate instant",
-        "SSD NVMe rapid",
-        "Monitorizare 24/7"
+        "Resurse VPS garantate 100%",
+        "Root access complet pe server",
+        "Scalabilitate instant hosting",
+        "Stocare SSD NVMe ultra-rapidă",
+        "Monitorizare gazduire 24/7"
       ],
       image: vpsImage,
       popular: true
     },
     {
       icon: Crown,
-      title: "Găzduire Dedicată",
-      subtitle: "Pentru site-uri cu trafic mare",
-      description: "Resurse dedicate și maximă performanță pentru găzduire servere dedicate.",
+      title: "Server Dedicat România",
+      subtitle: "Gazduire dedicată pentru trafic mare",
+      description: "Cea mai avansată soluție de gazduire web cu server dedicat exclusiv pentru proiectul tău. Performanță maximă garantată.",
       features: [
-        "Server dedicat 100%",
-        "Configurare personalizată",
-        "Performanță maximă",
-        "Suport prioritar",
-        "Management inclus"
+        "Server dedicat exclusiv 100%",
+        "Configurare server personalizată",
+        "Performanță maximă gazduire web",
+        "Support prioritar dedicat",
+        "Management server inclus"
       ],
       image: dedicatedImage
     }
@@ -57,10 +57,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">
-            Servicii de Găzduire Web Site
+            Servicii Gazduire Web România
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Alegem soluția perfectă pentru nevoile tale, de la site-uri simple la aplicații complexe
+            Compară soluțiile noastre de gazduire web și alege hosting-ul perfect pentru proiectul tău online
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const ServicesSection = () => {
             >
               {service.popular && (
                 <div className="absolute top-6 right-6 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
-                  Populară
+                  Cel Mai Popular
                 </div>
               )}
               
@@ -111,7 +111,7 @@ const ServicesSection = () => {
                     className="w-full"
                     size="lg"
                   >
-                    Alege Planul
+                    Alege Hosting-ul
                   </Button>
                 </div>
               </CardContent>
