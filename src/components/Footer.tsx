@@ -1,15 +1,13 @@
 import { Server, Phone, Mail, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-foreground text-white py-16">
+  return <footer className="bg-foreground text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2 mb-4">
               <Server className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-bold">WebHost Pro</span>
+              <span className="text-2xl font-bold">Gazduire Web</span>
             </div>
             <p className="text-white/80 leading-relaxed">
               Furnizor de încredere pentru servicii de găzduire web performante și sigure în România.
@@ -64,8 +62,6 @@ const Footer = () => {
           <p>&copy; 2024 WebHost Pro. Toate drepturile rezervate.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
