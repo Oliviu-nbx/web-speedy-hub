@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 WebHost Pro. Toate drepturile rezervate.</p>
+          <p>© 2025 Gazduire-web.org . Toate drepturile rezervate.</p>
         </div>
       </div>
     </footer>;
