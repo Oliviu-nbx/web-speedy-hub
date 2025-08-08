@@ -21,7 +21,7 @@ const HeroSection = () => {
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
           <Button asChild variant="hero" size="lg" className="text-lg px-10 py-4">
-            <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Vezi serviciile Namebox">
+            <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="nofollow noopener noreferrer" aria-label="Vezi serviciile Namebox">
               <Zap className="mr-2" />
               Vezi Servicii
             </a>

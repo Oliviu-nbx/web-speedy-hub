@@ -48,7 +48,7 @@ const ServicesSection = () => {
 
               <CardContent className="pt-0">
                 <Button asChild variant="hero" className="w-full" size="lg">
-                  <a href={service.link} target="_blank" rel="noopener noreferrer" aria-label={`Detalii ${service.title}`}>Vezi Detalii</a>
+                  <a href={service.link} target="_blank" rel="nofollow noopener noreferrer" aria-label={`Detalii ${service.title}`}>Vezi Detalii</a>
                 </Button>
               </CardContent>
             </Card>)}

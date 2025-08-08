@@ -28,7 +28,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium">
+            {navItems.map(item => <a key={item.label} href={item.href} rel="nofollow" className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium">
                 {item.label}
               </a>)}
           </div>
@@ -36,7 +36,7 @@ const Navigation = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex">
             <Button asChild variant="hero" size="sm">
-              <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
+              <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="nofollow noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
             </Button>
           </div>
 
@@ -51,11 +51,11 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              {navItems.map(item => <a key={item.label} href={item.href} className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium py-2" onClick={() => setIsMenuOpen(false)}>
+              {navItems.map(item => <a key={item.label} href={item.href} rel="nofollow" className="story-link text-foreground/80 hover:text-primary transition-colors duration-200 font-medium py-2" onClick={() => setIsMenuOpen(false)}>
                   {item.label}
                 </a>)}
               <Button asChild variant="hero" size="sm" className="mt-4 self-start">
-                <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
+                <a href="https://www.namebox.ro/#alege-pachet" target="_blank" rel="nofollow noopener noreferrer" aria-label="Comandă găzduire web Namebox">Începe Acum</a>
               </Button>
             </div>
           </div>}

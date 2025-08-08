@@ -33,7 +33,7 @@ const ContactSection = () => {
                 <div className="flex items-center justify-center">
                   <Mail className="w-8 h-8 mr-4 text-primary" />
                   <div className="text-center">
-                    <a href="mailto:office@namebox.ro" className="font-bold underline hover:opacity-90">office@namebox.ro</a>
+                    <a href="mailto:office@namebox.ro" rel="nofollow" className="font-bold underline hover:opacity-90">office@namebox.ro</a>
                     <p className="text-muted-foreground">Răspuns rapid</p>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ const ContactSection = () => {
               
               <div className="mt-8">
                 <Button asChild variant="hero" size="lg" className="text-lg px-8 py-4">
-                  <a href="tel:+40264334455" aria-label="Sună Namebox acum">
+                  <a href="tel:+40264334455" rel="nofollow" aria-label="Sună Namebox acum">
                     <Phone className="mr-2" />
                     Sună acum
                   </a>
