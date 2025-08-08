@@ -6,23 +6,23 @@ const AboutSection = () => {
   const features = [
     {
       icon: Globe,
-      title: "Ce Înseamnă Gazduire Web?",
-      description: "Gazduirea web este serviciul care permite ca site-ul tău să fie accesibil pe internet 24/7. Alegerea unei companii de gazduire web profesională este crucială pentru succesul online al afacerii tale în România."
+      title: "Ce Este Găzduirea Web?",
+      description: "Găzduirea web este procesul prin care un website este stocat pe un server, astfel încât să poată fi accesat de către utilizatori prin internet. Alegerea unui serviciu de găzduire web optimizat pentru performanță și SEO este esențială pentru succesul site-ului tău."
     },
     {
       icon: Zap,
-      title: "Viteza Hosting România",
-      description: "Viteza de încărcare este factorul cel mai important pentru succesul site-ului tău. Serviciile noastre de gazduire web folosesc tehnologie SSD și servere optimizate pentru performance maxim în România și Europa."
+      title: "Viteza de Încărcare a Site-ului și Găzduirea Web",
+      description: "Unul dintre cele mai importante aspecte ale găzduirii web este viteza de încărcare. Site-urile lente pot afecta negativ experiența utilizatorilor și pot duce la pierderea traficului. Găzduirea pe servere performante, cu stocare SSD sau NVMe, poate îmbunătăți semnificativ viteza de încărcare a site-ului."
     },
     {
       icon: Shield,
-      title: "Securitate Gazduire Web",
-      description: "Gazduirea web sigură protejează site-ul tău de atacuri cibernetice și malware. Oferim protecție completă DDoS, firewall avansat, certificate SSL gratuite și backup-uri automatizate pentru siguranța maximă."
+      title: "Securitatea Găzduirii Web",
+      description: "Găzduirea web trebuie să fie sigură pentru a proteja site-ul tău de atacuri cibernetice și de pierderi de date. Majoritatea furnizorilor de găzduire oferă măsuri de securitate, cum ar fi protecția împotriva DDoS, firewall-uri și criptarea datelor. De asemenea, certificatele SSL sunt esențiale pentru o conexiune sigură."
     },
     {
       icon: Headphones,
-      title: "Support Gazduire Web 24/7",
-      description: "Echipa noastră de specialiști în gazduire web este disponibilă 24/7 pentru a rezolva orice problemă tehnică. Support rapid și profesionist pentru toate serviciile de hosting din România."
+      title: "Suport Tehnic pentru Găzduire Web",
+      description: "Un serviciu de găzduire web de calitate trebuie să includă suport tehnic disponibil 24/7. Acesta este crucial pentru a rezolva rapid orice problemă apărută pe site-ul tău. Un suport tehnic prompt și competent poate preveni întreruperile de serviciu și pierderile de trafic."
     }
   ];
 
@@ -31,11 +31,8 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Tot Despre <span className="gradient-text">Gazduire Web România</span>
+            Despre <span className="gradient-text">Găzduirea Web Site</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ghidul complet pentru serviciile de gazduire web și hosting profesional în România
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -56,75 +53,20 @@ const AboutSection = () => {
           ))}
         </div>
 
-        {/* Security Section with Image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <img 
-              src={securityImage} 
-              alt="Securitatea web hosting"
-              className="rounded-2xl shadow-2xl w-full h-auto animate-float"
-            />
-          </div>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-3xl font-bold mb-4 gradient-text">Tipuri de Gazduire Web</h3>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Există mai multe tipuri de gazduire web: hosting shared, VPS și servere dedicate. Fiecare soluție de gazduire web are avantajele sale specifice, iar alegerea depinde de mărimea și complexitatea site-ului tău.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <TrendingUp className="w-6 h-6 text-secondary mt-1 mr-3 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Hosting Shared România</h4>
-                  <p className="text-muted-foreground">Gazduire web accesibilă pentru site-uri mici și medii</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <TrendingUp className="w-6 h-6 text-secondary mt-1 mr-3 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">VPS Hosting România</h4>
-                  <p className="text-muted-foreground">Gazduire web VPS pentru proiecte complexe și trafic mediu</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <TrendingUp className="w-6 h-6 text-secondary mt-1 mr-3 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold mb-1">Server Dedicat România</h4>
-                  <p className="text-muted-foreground">Gazduire web dedicată pentru aplicații mari cu trafic intens</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* History Section */}
-        <div className="mt-20">
+        {/* Tipuri de Găzduire Web */}
+        <div className="mt-16">
           <Card className="card-gradient">
             <CardHeader className="text-center">
-              <div className="flex justify-center mb-4">
-                <History className="w-12 h-12 text-primary" />
-              </div>
-              <CardTitle className="text-3xl gradient-text">Istoria Gazduire Web</CardTitle>
-              <CardDescription className="text-lg">
-                Evoluția serviciilor de gazduire web de la primul server din 1990 până la hosting-ul modern din România
-              </CardDescription>
+              <CardTitle className="text-3xl gradient-text mb-4">Tipuri de Găzduire Web</CardTitle>
             </CardHeader>
             <CardContent className="max-w-4xl mx-auto">
-              <div className="space-y-6 text-muted-foreground leading-relaxed">
-                <p>
-                  Gazduirea web în România a evoluat spectaculos din 1990 până astăzi. Prima soluție de gazduire web a fost introdusă odată cu primul server web creat de Tim Berners-Lee la CERN. Astăzi, România are o infrastructură de gazduire web modernă și competitivă.
-                </p>
-                <p>
-                  Primul server web din lume a fost găzduit pe un computer NeXT la CERN în Elveția în 1990. Această inovație a pus bazele industriei moderne de gazduire web. În România, primele servicii de hosting au apărut în anii 1990, evoluând rapid către soluții profesionale.
-                </p>
-                <p>
-                  Astăzi, piața românească de gazduire web oferă soluții complete: hosting shared accesibil, VPS scalabil și servere dedicate pentru proiecte mari. Tehnologiile moderne como SSD, NVMe și protecția DDoS sunt standard în gazduirea web profesională din România.
-                </p>
-              </div>
+              <p className="text-muted-foreground leading-relaxed mb-8 text-lg">
+                Există mai multe tipuri de găzduire web, inclusiv găzduirea shared, VPS (servere private virtuale) și găzduirea dedicată. Fiecare tip are propriile avantaje și dezavantaje, iar alegerea acestuia depinde de nevoile specifice ale site-ului tău. Găzduirea shared este ideală pentru site-uri mici și medii, în timp ce VPS și găzduirea dedicată sunt recomandate pentru site-uri cu trafic mare sau care necesită resurse suplimentare.
+              </p>
             </CardContent>
           </Card>
         </div>
+
       </div>
     </section>
   );
