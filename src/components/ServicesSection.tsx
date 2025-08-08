@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Users, Server, Crown } from "lucide-react";
-import sharedImage from "@/assets/shared-hosting.jpg";
-import vpsImage from "@/assets/vps-hosting.jpg";
-import dedicatedImage from "@/assets/dedicated-hosting.jpg";
+import sharedImage from "@/assets/shared-hosting-dark.jpg";
+import vpsImage from "@/assets/vps-hosting-dark.jpg";
+import dedicatedImage from "@/assets/dedicated-hosting-dark.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -49,7 +49,7 @@ const ServicesSection = () => {
                   alt={service.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                 <service.icon className="absolute bottom-6 right-6 w-8 h-8 text-white drop-shadow-lg" />
               </div>
 
