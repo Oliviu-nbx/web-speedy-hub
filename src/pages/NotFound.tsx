@@ -12,13 +12,16 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" rel="nofollow" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center px-6">
+        <h1 className="text-6xl font-bold mb-4 text-foreground">404</h1>
+        <p className="text-lg text-muted-foreground mb-6">Pagina căutată nu există sau a fost mutată.</p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+          <a href="/" rel="nofollow" className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:opacity-90 transition">Înapoi acasă</a>
+          <a href="#services" rel="nofollow" className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-border text-foreground hover:bg-muted transition">Vezi serviciile</a>
+          <a href="#contact" rel="nofollow" className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-border text-foreground hover:bg-muted transition">Contact</a>
+        </div>
+        <small className="text-muted-foreground">Dacă problema persistă, scrie-ne la <a href="mailto:office@namebox.ro" rel="nofollow" className="underline">office@namebox.ro</a>.</small>
       </div>
     </div>
   );

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gazduire Web | Servicii Hosting Profesionale România | WebHost Pro</title>
-    <meta name="description" content="Gazduire web profesională în România. Hosting shared, VPS și servere dedicate cu suport 24/7. Cele mai bune servicii de gazduire web pentru site-ul tău." />
+    <title>Găzduire Web în România | Shared, VPS, Dedicat</title>
+    <meta name="description" content="Hosting rapid în România: găzduire shared, VPS și servere dedicate cu suport 24/7. Performanță, securitate și uptime pentru site-ul tău." />
     <meta name="author" content="Lovable" />
 
-    <meta property="og:title" content="Gazduire Web | Servicii Hosting Profesionale România | WebHost Pro" />
-    <meta property="og:description" content="Gazduire web profesională în România. Hosting shared, VPS și servere dedicate cu suport 24/7. Cele mai bune servicii de gazduire web pentru site-ul tău." />
+    <meta property="og:title" content="Găzduire Web în România | Shared, VPS, Dedicat" />
+    <meta property="og:description" content="Hosting rapid în România: găzduire shared, VPS și servere dedicate cu suport 24/7. Performanță, securitate și uptime pentru site-ul tău." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
@@ -19,6 +19,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
+    <link rel="canonical" href="https://gazduire-web.org/" />
+    <meta property="og:url" content="https://gazduire-web.org/" />
+    <meta property="og:site_name" content="Gazduire Web" />
+
+    <link rel="preload" as="image" href="/src/assets/hero-servers.jpg" fetchpriority="high" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Gazduire Web",
+        "url": "https://gazduire-web.org/",
+        "logo": "/favicon.ico",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+40 264 33 44 55",
+            "contactType": "customer support",
+            "areaServed": "RO",
+            "availableLanguage": ["ro", "en"],
+            "email": "office@namebox.ro"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Heltai Gáspár 17",
+          "addressLocality": "Cluj-Napoca",
+          "addressCountry": "RO"
+        }
+      }
+    </script>
+
+    <!-- Optional, non-blocking Google Analytics: set window.GA_MEASUREMENT_ID (e.g., 'G-XXXXXXXXXX') to enable -->
+    <script>
+      (function () {
+        var id = (window as any).GA_MEASUREMENT_ID || "";
+        if (!id) return;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        document.head.appendChild(s);
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        function gtag(){ (window as any).dataLayer.push(arguments); }
+        (window as any).gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', id);
+      })();
+    </script>
+
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

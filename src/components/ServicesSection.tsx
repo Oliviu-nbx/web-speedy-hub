@@ -36,7 +36,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, index) => <Card key={index} className="card-gradient relative overflow-hidden h-full hover:scale-[1.02] transition-all duration-300">
               <div className="relative h-52 overflow-hidden">
-                <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+                <img src={service.image} alt={`Găzduire ${service.title} — performanță Namebox`} loading="lazy" decoding="async" className="w-full h-full object-cover" sizes="(min-width: 768px) 33vw, 100vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-white/80 to-transparent" />
                 <service.icon className="absolute bottom-6 right-6 w-8 h-8 text-primary drop-shadow-lg" />
               </div>
